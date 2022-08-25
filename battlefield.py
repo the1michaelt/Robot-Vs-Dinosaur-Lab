@@ -8,8 +8,14 @@ class Battlefield:
                 
         def run_game(self):
             pass
-        def display_welcome():
-            print("Robot vs. Dinosaur in Future City")
+        
+        def display_welcome(self):
+            print("Robot vs. Dinosaur inside the Rocktagon")
+            
+        def announce_action():
+            pass #randomly selects 2-3 actions
+        #narrates the action 
+        # determines a winner
         
         def display_winner():
             if winner == Robot:
