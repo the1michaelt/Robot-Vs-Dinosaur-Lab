@@ -6,24 +6,24 @@ class Dinosaur:
         self.name = name  #instance variables
         self.health= health
         self.attack_power = 14
-        self.has_speed = 11
-        self.jumping_power = 18
+        # self.has_speed = 11
+        # self.jumping_power = 18
 
 #methods (the functions)
-    def can_attack_Robot():
+    def can_attack_Robot(self, robot):
         pass
     
-    def can_survive_Battlefield():
-        pass
+    # def can_survive_Battlefield(self):
+    #     pass
     
-    def lowers_Robot_health_with_attack_power():
-        pass
+    # def lowers_Robot_health_with_attack_power(self):
+    #     pass
     
-    def can_jump():
-        pass
+    # def can_jump(self):
+    #     pass
 
-    def can_destroy_environmental_elements():
-        pass
+    # def can_destroy_environmental_elements(self):
+    #     pass
     
-    def can_knock_away_Robo_weapon():
-        pass
+    # def can_knock_away_Robo_weapon(self):
+    #     pass
