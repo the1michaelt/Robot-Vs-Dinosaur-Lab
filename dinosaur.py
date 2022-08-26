@@ -7,8 +7,10 @@ class Dinosaur:
         self.name = name 
         self.health= 100
         self.attack_power = attack_power
-
+        
 #methods (the functions)
-    def attack(self,robot):
-        pass
+    def attack(self,robot,self.health):
+        health = self.health - robot.attack_power
+        print(health)
     
+
