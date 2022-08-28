@@ -1,7 +1,3 @@
-# (10 points): Dinosaur to have a name, health, and attack_power.  
-# (10 points): Dinosaur to have the ability to attack a Robot on a Battlefield. 
-# This attack method should lower a Robot’s health by the value of the Dinosaur’s attack_power. 
-
 class Dinosaur:
     def __init__(self, name, attack_power): 
         self.name = name 
@@ -9,8 +5,8 @@ class Dinosaur:
         self.attack_power = attack_power
         
 #methods (the functions)
-    def attack(self,robot,self.health):
-        health = self.health - robot.attack_power
-        print(health)
-    
+    def dino_attack(self,robot,self.health):
+        # the function's instruction
+        print(f'{self.health} % health. ', self.name, 'the dino just attacked!')
+
 
