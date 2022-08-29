@@ -1,6 +1,8 @@
 from robot import Robot
 from dinosaur import Dinosaur
 
+# This is one-page scratchwork to try to get some of the functions to work
+
 class Battlefield: #the metaphor of two opponents, not an actual space
     def __init__(self):
         self.robot = Robot("Irresistible")  # passes through the name
@@ -10,7 +12,6 @@ class Battlefield: #the metaphor of two opponents, not an actual space
         display_welcome(self)
         battle_phase(self)        
         display_winner(self)
-
     run_game(self)
     
     def display_welcome(self):
@@ -20,21 +21,14 @@ class Battlefield: #the metaphor of two opponents, not an actual space
         while dinosaur.health > 0:
             dino_attack(self)
             robot.health -= amount_of_damage
-            # print(f'{dinosaur.health} % remains.')
-            
-        while robot.health >0:
+
+        while robot.health > 0:
             robot_attack(self)
-            dinosaur.health -= amount_of_damage
-            # print(f'{dinosaur.health} % remains.')
-        
+            dinosaur.health -= 50
+
+                    
     def display_winner(self):
         if dinosaur.health <= 0:
-            print(robot.name, ',the robot wins!')
-        else:
-            dino_attack(self, robot)
-        
-        if robot.health <= 0:
-            print(dinosaur.name, ",the dinosaur wins!")
-        else:
-            robo_attack(self, dinosaur)
-        
+            print(f'{dinosaur.name}, at {dinosaur.health}% health, dies from injuries.', robot.name, 'survives as the winner.')
+        elif robot.health <= 0:
+            print(f'{robot.name}, at {robot.health}% health, dies from injuries.', dinosaur.name, 'survives as the winner.')

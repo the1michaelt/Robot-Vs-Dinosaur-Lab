@@ -6,7 +6,6 @@ class Dinosaur:
         
 #methods (the functions)
     def dino_attack(self,robot,self.health):
-        # the function's instruction
-        print(f'{self.health} % health. ', self.name, 'the dino just attacked!')
+        print(f'{dinosaur.health}, the dino, at {dinosaur.health}% health, just lashed {robot.name}, the robot, with his tail!')
 
 
