@@ -1,8 +1,4 @@
-from battlefield import Battlefield
-from robot import Robot
-from dinosaur import Dinosaur
+from battleground import Battleground
 
-game=Battlefield() #calling the function
-game.run_game() #calling the element
-
-
+play = Battleground()
+play.run_game()
